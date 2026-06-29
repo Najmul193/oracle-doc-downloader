@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Downloads
+downloads/*
+!downloads/.gitkeep
+
+# Logs
+logs/*
+!logs/.gitkeep
+
+# Metadata
+metadata/*
+!metadata/.gitkeep
+
+# Chrome/WebDriver downloads
+src/Downloading Chrome for Testing*.log

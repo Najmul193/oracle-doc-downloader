@@ -1,0 +1,108 @@
+2026-06-29 14:52:54,625 - oracle-doc-downloader - INFO - Crawling: https://docs.oracle.com/cd/G27840_01/index.htm
+2026-06-29 14:53:24,627 - oracle-doc-downloader - ERROR - Error crawling https://docs.oracle.com/cd/G27840_01/index.htm: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://docs.oracle.com/cd/G27840_01/index.htm", waiting until "networkidle"
+
+2026-06-29 14:54:24,592 - oracle-doc-downloader - INFO - Crawling: https://docs.oracle.com/cd/G27840_01/index.htm
+2026-06-29 14:54:30,013 - oracle-doc-downloader - DEBUG - Found 66 PDFs and 141 links on https://docs.oracle.com/cd/G27840_01/index.htm
+2026-06-29 14:54:30,013 - oracle-doc-downloader - INFO - Crawling: https://docs.oracle.com/cd/G27840_01/RHTML/SMS/Responsive HTML5/index.html
+2026-06-29 14:54:36,063 - oracle-doc-downloader - DEBUG - Found 0 PDFs and 1 links on https://docs.oracle.com/cd/G27840_01/RHTML/SMS/Responsive HTML5/index.html
+2026-06-29 14:54:36,063 - oracle-doc-downloader - INFO - Crawling: https://docs.oracle.com/cd/G27840_01/RHTML/Retail_Bills/Responsive HTML5/index.html
+2026-06-29 14:54:42,656 - oracle-doc-downloader - DEBUG - Found 0 PDFs and 1 links on https://docs.oracle.com/cd/G27840_01/RHTML/Retail_Bills/Responsive HTML5/index.html
+2026-06-29 14:54:42,656 - oracle-doc-downloader - INFO - Crawling: https://docs.oracle.com/cd/G27840_01/RHTML/SI/Responsive HTML5/index.html
+2026-06-29 14:54:48,881 - oracle-doc-downloader - DEBUG - Found 0 PDFs and 1 links on https://docs.oracle.com/cd/G27840_01/RHTML/SI/Responsive HTML5/index.html
+2026-06-29 14:54:48,881 - oracle-doc-downloader - INFO - Crawling: https://docs.oracle.com/cd/G27840_01/PDF/CD/DEP.pdf
+2026-06-29 14:54:49,528 - oracle-doc-downloader - ERROR - Error crawling https://docs.oracle.com/cd/G27840_01/PDF/CD/DEP.pdf: Page.goto: Download is starting
+Call log:
+  - navigating to "https://docs.oracle.com/cd/G27840_01/PDF/CD/DEP.pdf", waiting until "domcontentloaded"
+
+2026-06-29 14:54:49,528 - oracle-doc-downloader - INFO - Crawling: https://docs.oracle.com/cd/G27840_01/PDF/FI/Islamic_FA.pdf
+2026-06-29 14:54:51,225 - oracle-doc-downloader - ERROR - Error crawling https://docs.oracle.com/cd/G27840_01/PDF/FI/Islamic_FA.pdf: Page.goto: Download is starting
+Call log:
+  - navigating to "https://docs.oracle.com/cd/G27840_01/PDF/FI/Islamic_FA.pdf", waiting until "domcontentloaded"
+
+2026-06-29 14:54:51,225 - oracle-doc-downloader - INFO - Crawling: https://docs.oracle.com/cd/G27840_01/RHTML/Balance_Forecast/Responsive HTML5/index.html
+2026-06-29 14:55:01,768 - oracle-doc-downloader - DEBUG - Found 0 PDFs and 1 links on https://docs.oracle.com/cd/G27840_01/RHTML/Balance_Forecast/Responsive HTML5/index.html
+2026-06-29 14:55:01,769 - oracle-doc-downloader - INFO - Crawling: https://docs.oracle.com/cd/G27840_01/interface.htm
+2026-06-29 14:55:06,028 - oracle-doc-downloader - DEBUG - Found 22 PDFs and 50 links on https://docs.oracle.com/cd/G27840_01/interface.htm
+2026-06-29 14:55:06,028 - oracle-doc-downloader - INFO - Crawling: https://docs.oracle.com/cd/G27840_01/install.htm
+2026-06-29 14:55:11,565 - oracle-doc-downloader - DEBUG - Found 46 PDFs and 59 links on https://docs.oracle.com/cd/G27840_01/install.htm
+2026-06-29 14:55:11,565 - oracle-doc-downloader - INFO - Crawling: https://docs.oracle.com/cd/G27840_01/RHTML/Bulletin_Board/Responsive HTML5/index.html
+2026-06-29 14:55:18,383 - oracle-doc-downloader - DEBUG - Found 0 PDFs and 1 links on https://docs.oracle.com/cd/G27840_01/RHTML/Bulletin_Board/Responsive HTML5/index.html
+2026-06-29 14:55:18,383 - oracle-doc-downloader - INFO - Crawling: https://docs.oracle.com/cd/G27840_01/PDF/Common_Core/CommonCore_AEOD.pdf
+2026-06-29 14:55:19,177 - oracle-doc-downloader - ERROR - Error crawling https://docs.oracle.com/cd/G27840_01/PDF/Common_Core/CommonCore_AEOD.pdf: Page.goto: Download is starting
+Call log:
+  - navigating to "https://docs.oracle.com/cd/G27840_01/PDF/Common_Core/CommonCore_AEOD.pdf", waiting until "domcontentloaded"
+
+2026-06-29 14:55:19,177 - oracle-doc-downloader - INFO - Crawling: https://docs.oracle.com/cd/G27840_01/RHTML/IF_EMS/Responsive HTML5/index.html
+2026-06-29 14:55:28,131 - oracle-doc-downloader - DEBUG - Found 0 PDFs and 1 links on https://docs.oracle.com/cd/G27840_01/RHTML/IF_EMS/Responsive HTML5/index.html
+2026-06-29 14:55:28,131 - oracle-doc-downloader - INFO - Crawling: https://docs.oracle.com/cd/G27840_01/RHTML/AEOD/Responsive HTML5/index.html
+2026-06-29 14:55:35,334 - oracle-doc-downloader - DEBUG - Found 0 PDFs and 1 links on https://docs.oracle.com/cd/G27840_01/RHTML/AEOD/Responsive HTML5/index.html
+2026-06-29 14:55:35,334 - oracle-doc-downloader - INFO - Crawling: https://docs.oracle.com/cd/G27840_01/PDF/Core/SMS.pdf
+2026-06-29 14:55:36,327 - oracle-doc-downloader - ERROR - Error crawling https://docs.oracle.com/cd/G27840_01/PDF/Core/SMS.pdf: Page.goto: Download is starting
+Call log:
+  - navigating to "https://docs.oracle.com/cd/G27840_01/PDF/Core/SMS.pdf", waiting until "domcontentloaded"
+
+2026-06-29 14:55:36,327 - oracle-doc-downloader - INFO - Crawling: https://docs.oracle.com/cd/G27840_01/PDF/OTHERS/Bulletin_Board.pdf
+2026-06-29 14:55:37,302 - oracle-doc-downloader - ERROR - Error crawling https://docs.oracle.com/cd/G27840_01/PDF/OTHERS/Bulletin_Board.pdf: Page.goto: Download is starting
+Call log:
+  - navigating to "https://docs.oracle.com/cd/G27840_01/PDF/OTHERS/Bulletin_Board.pdf", waiting until "domcontentloaded"
+
+2026-06-29 14:55:37,302 - oracle-doc-downloader - INFO - Crawling: https://docs.oracle.com/cd/G27840_01/PDF/IP/IP.pdf
+2026-06-29 14:55:38,250 - oracle-doc-downloader - ERROR - Error crawling https://docs.oracle.com/cd/G27840_01/PDF/IP/IP.pdf: Page.goto: Download is starting
+Call log:
+  - navigating to "https://docs.oracle.com/cd/G27840_01/PDF/IP/IP.pdf", waiting until "domcontentloaded"
+
+2026-06-29 14:55:38,250 - oracle-doc-downloader - INFO - Crawling: https://docs.oracle.com/cd/G27840_01/RHTML/MS/Responsive HTML5/index.html
+2026-06-29 14:55:46,305 - oracle-doc-downloader - DEBUG - Found 0 PDFs and 1 links on https://docs.oracle.com/cd/G27840_01/RHTML/MS/Responsive HTML5/index.html
+2026-06-29 14:55:46,305 - oracle-doc-downloader - INFO - Crawling: https://docs.oracle.com/cd/G27840_01/PDF/Core/PDP (Batch Processing).pdf
+2026-06-29 14:55:46,903 - oracle-doc-downloader - ERROR - Error crawling https://docs.oracle.com/cd/G27840_01/PDF/Core/PDP (Batch Processing).pdf: Page.goto: Download is starting
+Call log:
+  - navigating to "https://docs.oracle.com/cd/G27840_01/PDF/Core/PDP%20(Batch%20Processing).pdf", waiting until "domcontentloaded"
+
+2026-06-29 14:55:46,903 - oracle-doc-downloader - INFO - Crawling: https://docs.oracle.com/cd/G27840_01/PDF/Core/CASA.pdf
+2026-06-29 14:55:47,900 - oracle-doc-downloader - ERROR - Error crawling https://docs.oracle.com/cd/G27840_01/PDF/Core/CASA.pdf: Page.goto: Download is starting
+Call log:
+  - navigating to "https://docs.oracle.com/cd/G27840_01/PDF/Core/CASA.pdf", waiting until "domcontentloaded"
+
+2026-06-29 14:55:47,901 - oracle-doc-downloader - INFO - Crawling: https://docs.oracle.com/cd/G27840_01/RHTML/Charges_Fees/Responsive HTML5/index.html
+2026-06-29 14:55:58,914 - oracle-doc-downloader - DEBUG - Found 0 PDFs and 1 links on https://docs.oracle.com/cd/G27840_01/RHTML/Charges_Fees/Responsive HTML5/index.html
+2026-06-29 14:55:58,914 - oracle-doc-downloader - INFO - Crawling: https://docs.oracle.com/cd/G27840_01/RHTML/Islamic_FA/Responsive HTML5/index.html
+2026-06-29 14:56:08,149 - oracle-doc-downloader - DEBUG - Found 0 PDFs and 1 links on https://docs.oracle.com/cd/G27840_01/RHTML/Islamic_FA/Responsive HTML5/index.html
+2026-06-29 14:56:08,149 - oracle-doc-downloader - INFO - Crawling: https://docs.oracle.com/cd/G27840_01/PDF/Retail_Bills/Retail_Bills.pdf
+2026-06-29 14:56:09,123 - oracle-doc-downloader - ERROR - Error crawling https://docs.oracle.com/cd/G27840_01/PDF/Retail_Bills/Retail_Bills.pdf: Page.goto: Download is starting
+Call log:
+  - navigating to "https://docs.oracle.com/cd/G27840_01/PDF/Retail_Bills/Retail_Bills.pdf", waiting until "domcontentloaded"
+
+2026-06-29 14:56:09,123 - oracle-doc-downloader - INFO - Crawling: https://docs.oracle.com/cd/G27840_01/PDF/OTHERS/Machine_Learning (OML).pdf
+2026-06-29 14:56:09,789 - oracle-doc-downloader - ERROR - Error crawling https://docs.oracle.com/cd/G27840_01/PDF/OTHERS/Machine_Learning (OML).pdf: Page.goto: Download is starting
+Call log:
+  - navigating to "https://docs.oracle.com/cd/G27840_01/PDF/OTHERS/Machine_Learning%20(OML).pdf", waiting until "domcontentloaded"
+
+2026-06-29 14:56:09,789 - oracle-doc-downloader - INFO - Crawling: https://docs.oracle.com/cd/G27840_01/RHTML/Implementation/Responsive HTML5/index.html
+2026-06-29 14:56:23,257 - oracle-doc-downloader - DEBUG - Found 0 PDFs and 1 links on https://docs.oracle.com/cd/G27840_01/RHTML/Implementation/Responsive HTML5/index.html
+2026-06-29 14:56:23,257 - oracle-doc-downloader - INFO - Crawling: https://docs.oracle.com/cd/G27840_01/PDF/Core/Modularity/Sign_Verify.pdf
+2026-06-29 14:56:24,244 - oracle-doc-downloader - ERROR - Error crawling https://docs.oracle.com/cd/G27840_01/PDF/Core/Modularity/Sign_Verify.pdf: Page.goto: Download is starting
+Call log:
+  - navigating to "https://docs.oracle.com/cd/G27840_01/PDF/Core/Modularity/Sign_Verify.pdf", waiting until "domcontentloaded"
+
+2026-06-29 14:56:24,245 - oracle-doc-downloader - INFO - Crawling: https://docs.oracle.com/cd/G27840_01/PDF/OTHERS/Dashboard.pdf
+2026-06-29 14:58:08,169 - oracle-doc-downloader - INFO - Crawling: https://docs.oracle.com/cd/G27840_01/index.htm
+2026-06-29 14:58:13,598 - oracle-doc-downloader - DEBUG - Found 66 PDFs and 75 links on https://docs.oracle.com/cd/G27840_01/index.htm
+2026-06-29 14:58:13,600 - oracle-doc-downloader - INFO - Crawling: https://docs.oracle.com/cd/G27840_01/RHTML/Procedures/Responsive HTML5/index.html
+2026-06-29 14:58:19,369 - oracle-doc-downloader - DEBUG - Found 0 PDFs and 1 links on https://docs.oracle.com/cd/G27840_01/RHTML/Procedures/Responsive HTML5/index.html
+2026-06-29 14:58:19,371 - oracle-doc-downloader - INFO - Crawling: https://docs.oracle.com/cd/G27840_01/RHTML/Inventory/Responsive HTML5/index.html
+2026-06-29 14:58:26,566 - oracle-doc-downloader - DEBUG - Found 0 PDFs and 1 links on https://docs.oracle.com/cd/G27840_01/RHTML/Inventory/Responsive HTML5/index.html
+2026-06-29 14:58:26,568 - oracle-doc-downloader - INFO - Crawling: https://docs.oracle.com/cd/G27840_01/relnotes.htm
+2026-06-29 14:58:31,818 - oracle-doc-downloader - DEBUG - Found 1 PDFs and 13 links on https://docs.oracle.com/cd/G27840_01/relnotes.htm
+2026-06-29 14:58:31,820 - oracle-doc-downloader - INFO - Crawling: https://docs.oracle.com/cd/G27840_01/RHTML/CommonCore_CoreServices/Responsive HTML5/index.html
+2026-06-29 14:58:38,764 - oracle-doc-downloader - DEBUG - Found 0 PDFs and 1 links on https://docs.oracle.com/cd/G27840_01/RHTML/CommonCore_CoreServices/Responsive HTML5/index.html
+2026-06-29 14:58:38,766 - oracle-doc-downloader - INFO - Crawling: https://docs.oracle.com/cd/G27840_01/RHTML/IP/Responsive HTML5/index.html
+2026-06-29 14:58:46,262 - oracle-doc-downloader - DEBUG - Found 0 PDFs and 1 links on https://docs.oracle.com/cd/G27840_01/RHTML/IP/Responsive HTML5/index.html
+2026-06-29 14:58:46,263 - oracle-doc-downloader - INFO - Crawling: https://docs.oracle.com/cd/G27840_01/RHTML/CASA/Responsive HTML5/index.html
+2026-06-29 14:58:51,453 - oracle-doc-downloader - DEBUG - Found 0 PDFs and 1 links on https://docs.oracle.com/cd/G27840_01/RHTML/CASA/Responsive HTML5/index.html
+2026-06-29 14:58:51,455 - oracle-doc-downloader - INFO - Crawling: https://docs.oracle.com/cd/G27840_01/RHTML/PDP (Batch Processing)/Responsive HTML5/index.html
+2026-06-29 14:58:58,957 - oracle-doc-downloader - DEBUG - Found 0 PDFs and 1 links on https://docs.oracle.com/cd/G27840_01/RHTML/PDP (Batch Processing)/Responsive HTML5/index.html
+2026-06-29 14:58:58,959 - oracle-doc-downloader - INFO - Crawling: https://docs.oracle.com/cd/G27840_01/RHTML/Term_Deposits/Responsive HTML5/index.html
+2026-06-29 14:59:05,069 - oracle-doc-downloader - DEBUG - Found 0 PDFs and 1 links on https://docs.oracle.com/cd/G27840_01/RHTML/Term_Deposits/Responsive HTML5/index.html
+2026-06-29 14:59:05,072 - oracle-doc-downloader - INFO - Crawling: https://docs.oracle.com/cd/G27840_01/RHTML/Relationship_Pricing/Responsive HTML5/index.html

@@ -1,0 +1,30 @@
+[project]
+name = "oracle-doc-downloader"
+version = "1.0.0"
+description = "Recursively crawl Oracle documentation and download PDFs"
+requires-python = ">=3.12"
+dependencies = [
+    "playwright>=1.40.0",
+    "beautifulsoup4>=4.12.0",
+    "httpx>=0.25.0",
+    "pydantic>=2.0.0",
+    "PyPDF2>=3.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.1.0",
+    "mypy>=1.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
