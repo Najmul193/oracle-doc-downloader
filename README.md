@@ -8,7 +8,6 @@ Recursively crawl Oracle documentation websites and download PDFs with smart nam
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -e .
-python3 -m playwright install chromium
 ```
 
 ## Usage

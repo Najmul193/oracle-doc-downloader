@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import asyncio
 import logging
+from collections import deque
 from urllib.parse import urljoin, urlparse
 
 import httpx
@@ -115,11 +116,11 @@ class DocumentationCrawler:
         if self._client is None:
             return 0
 
-        to_visit: list[str] = [self.start_url]
+        to_visit: deque[str] = deque([self.start_url])
         crawled_count = 0
 
         while to_visit and crawled_count < 1000:
-            url = to_visit.pop(0)
+            url = to_visit.popleft()
 
             if url in self._visited_urls:
                 continue

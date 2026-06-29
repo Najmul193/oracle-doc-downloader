@@ -4,7 +4,6 @@ version = "1.0.0"
 description = "Recursively crawl Oracle documentation and download PDFs"
 requires-python = ">=3.12"
 dependencies = [
-    "playwright>=1.40.0",
     "beautifulsoup4>=4.12.0",
     "httpx>=0.25.0",
     "pydantic>=2.0.0",

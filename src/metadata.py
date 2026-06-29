@@ -5,6 +5,8 @@ from dataclasses import dataclass, field
 from datetime import datetime
 from pathlib import Path
 
+from utils import get_sha256
+
 
 @dataclass
 class PDFMetadata:
@@ -64,8 +66,6 @@ class MetadataManager:
         page_title: str | None,
         file_path: Path,
     ) -> PDFMetadata:
-        from utils import get_sha256  # type: ignore
-
         metadata = PDFMetadata(
             original_url=pdf_url,
             downloaded_filename=downloaded_name,

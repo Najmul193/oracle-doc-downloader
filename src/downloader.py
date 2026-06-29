@@ -2,11 +2,15 @@ from __future__ import annotations
 
 import asyncio
 import logging
+import shutil
 import tempfile
 from pathlib import Path
 
 import httpx
-from renamer import PDFRenamer  # type: ignore
+
+from metadata import MetadataManager
+from renamer import PDFRenamer
+from utils import is_pdf_valid
 
 
 logger = logging.getLogger("oracle-doc-downloader")
@@ -66,13 +70,12 @@ class PDFDownloader:
         pdf_url: str,
         referring_page_url: str | None = None,
     ) -> DownloadResult:
-        from utils import is_pdf_valid  # type: ignore
-
         if self._semaphore is None or self.renamer is None:
             raise RuntimeError("Downloader not initialized in async context")
 
         async with self._semaphore:
             for attempt in range(self.max_retries):
+                temp_dir: str | None = None
                 try:
                     response = await self.http_client.get(pdf_url)
                     content_type = response.headers.get("content-type", "")
@@ -93,8 +96,7 @@ class PDFDownloader:
 
                     if not is_pdf_valid(temp_path):
                         logger.warning(f"Downloaded file is not a valid PDF: {pdf_url}")
-                        temp_path.unlink()
-                        Path(temp_dir).rmdir()
+                        shutil.rmtree(temp_dir, ignore_errors=True)
                         return DownloadResult(success=False, error_message="Invalid PDF file")
 
                     smart_name = await self.renamer.determine_filename(
@@ -109,6 +111,7 @@ class PDFDownloader:
                         counter += 1
 
                     temp_path.rename(final_path)
+                    shutil.rmtree(temp_dir, ignore_errors=True)
                     self.downloaded_count += 1
                     logger.info(f"Downloaded: {pdf_url} -> {final_path.name}")
 
@@ -134,7 +137,7 @@ class PDFDownloader:
     async def download_all(
         self,
         pdf_links: list[tuple[str, str | None]],
-        metadata_manager: "MetadataManager",  # type: ignore
+        metadata_manager: MetadataManager,
     ) -> dict[str, DownloadResult]:
         results: dict[str, DownloadResult] = {}
 
@@ -166,5 +169,6 @@ class PDFDownloader:
                     page_title=None,
                     file_path=result.file_path,
                 )
+                metadata_manager.save_checkpoint()
 
         return results
