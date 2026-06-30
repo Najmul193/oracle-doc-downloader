@@ -51,18 +51,21 @@ class PDFRenamer:
     ) -> str:
         from utils import normalize_filename
 
+        # Use the original URL filename first (it's unique and descriptive)
+        original_name = Path(original_url).name
+        if original_name:
+            return normalize_filename(original_name)
+
+        # Fall back to PDF metadata title
         title = await self.extract_pdf_title(pdf_path)
         if title:
             return normalize_filename(title)
 
+        # Fall back to referring page title
         if referring_page_url:
             page_title = await self.get_page_title(referring_page_url)
             if page_title:
                 return normalize_filename(page_title)
-
-        original_name = Path(original_url).name
-        if original_name:
-            return normalize_filename(original_name)
 
         return normalize_filename("downloaded_document")
 

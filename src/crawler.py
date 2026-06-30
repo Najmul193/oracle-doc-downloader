@@ -19,7 +19,12 @@ class DocumentationCrawler:
         self._visited_urls: set[str] = set()
         self._pdf_links: set[str] = set()
         self._pdf_referrers: dict[str, str] = {}
-        self._base_domain = urlparse(start_url).netloc
+        parsed_start = urlparse(start_url)
+        self._base_domain = parsed_start.netloc
+        # Use the directory portion of the path as the allowed prefix (lowercase)
+        path = parsed_start.path.rstrip("/")
+        last_slash = path.rfind("/")
+        self._allowed_path_prefix = (path[: last_slash + 1] if last_slash > 0 else "/").lower()
         self._client: httpx.AsyncClient | None = None
 
     async def __aenter__(self) -> "DocumentationCrawler":
@@ -34,6 +39,12 @@ class DocumentationCrawler:
         if self._client:
             await self._client.aclose()
 
+    def _is_under_allowed_path(self, url: str) -> bool:
+        parsed = urlparse(url)
+        if parsed.netloc != self._base_domain:
+            return False
+        return parsed.path.lower().startswith(self._allowed_path_prefix)
+
     def _extract_pdf_links(self, html: str, base_url: str) -> set[str]:
         pdfs: set[str] = set()
         soup = BeautifulSoup(html, "html.parser")
@@ -45,7 +56,7 @@ class DocumentationCrawler:
 
             if parsed.netloc == self._base_domain:
                 path = parsed.path.lower()
-                if path.endswith(".pdf"):
+                if path.endswith(".pdf") and path.startswith(self._allowed_path_prefix):
                     pdfs.add(absolute_url)
 
         return pdfs
@@ -64,11 +75,10 @@ class DocumentationCrawler:
         return pages
 
     def _should_follow_link(self, url: str) -> bool:
-        parsed = urlparse(url)
-        if parsed.netloc != self._base_domain:
+        if not self._is_under_allowed_path(url):
             return False
 
-        path = parsed.path.lower()
+        path = urlparse(url).path.lower()
         extensions_to_skip = {".zip", ".exe", ".tar.gz", ".jpg", ".png", ".gif", ".pdf"}
 
         for ext in extensions_to_skip:
